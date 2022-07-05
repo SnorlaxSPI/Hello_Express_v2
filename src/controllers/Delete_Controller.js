@@ -1,6 +1,6 @@
 import { clients } from '../routes/routes.js';
 
-export function get_delete(request,response) {
+export function delete_controller(request,response) {
   
   const { id } = request.body;
   console.log(request.body);
