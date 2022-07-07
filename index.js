@@ -4,6 +4,7 @@ import express from 'express';
 import { router } from './src/routes/routes.js';
 import bodyParser from 'body-parser';
 import { log } from './src/middlewares/log.js';
+import './src/database/connect.js';
 
 const app = express();
 

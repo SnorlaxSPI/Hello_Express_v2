@@ -1,10 +1,10 @@
 import { clients } from '../routes/routes.js';
 
-export function put_controller(request,response) {
+export async function Put_Controller(request,response) {
   const id = request.params.id;
   const nome = request.body.name;
 
-  let client = clients.find(value => value.id == id);
+  let client = await clients.find(value => value.id == id);
   
   if(client == undefined) {
     response.status(400).send();
